@@ -1,0 +1,17 @@
+export function templateRender() {
+  return `
+    <div class="commands">
+      <div id="promt-history" class="promt-text"></div>
+      <div class="promt-input">
+        <span class="prefix promt-text"></span>
+        <input
+          type="textarea"
+          id="terminal-input"
+          class="promt-text"
+          autofocus
+          autocomplete="off"
+        ></input>
+      </div>
+    </div>
+  `;
+}

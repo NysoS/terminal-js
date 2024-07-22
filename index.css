@@ -15,7 +15,7 @@ body {
   align-items: center;
 }
 
-#terminal {
+cmd-terminal {
   width: 75%;
   height: 75%;
   max-height: 75%;
@@ -27,17 +27,17 @@ body {
   padding: 8px;
 }
 
-#terminal::-webkit-scrollbar {
+cmd-terminal::-webkit-scrollbar {
   padding: 5px;
   width: 6px;
 }
 
-#terminal::-webkit-scrollbar-track {
+cmd-terminal::-webkit-scrollbar-track {
   background: rgba(92, 28, 92, 0.7);
   border-radius: 8px;
 }
 
-#terminal::-webkit-scrollbar-thumb {
+cmd-terminal::-webkit-scrollbar-thumb {
   background-color: #4c0d5e;
   border-radius: 12px;
 }
@@ -46,15 +46,15 @@ body {
   font-size: 18px;
 }
 
-#terminal .commands {
+.commands {
   color: rgb(206, 206, 206);
 }
 
-#terminal .promt-input {
+.promt-input {
   display: flex;
 }
 
-#terminal .promt-input input {
+.promt-input input {
   border: 0;
   background: transparent;
   width: 100%;
@@ -62,11 +62,11 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#terminal .commands input:focus {
+.commands .promt-input input:focus {
   outline: none;
 }
 
-#terminal #promt-history {
+#promt-history {
   display: flex;
   flex-direction: column;
 }

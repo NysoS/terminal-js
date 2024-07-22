@@ -1,3 +1,1 @@
-import Terminal from "./Terminal.js";
-
-new Terminal();
+import "./Terminal.js";
