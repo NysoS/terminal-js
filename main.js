@@ -1,1 +1,1 @@
-import "./Terminal.js";
+import "./src/TerminalElement.js";
