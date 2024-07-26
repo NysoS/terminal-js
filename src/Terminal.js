@@ -1,3 +1,5 @@
+import { CommandInvoker } from "./CommandInvoker.js";
+
 class Terminal {
   /** @type {HTMLElement} */
   terminalElt = null;
@@ -8,7 +10,12 @@ class Terminal {
   /** @type {terminalConfig} config */
   config = null;
 
+  /** @type {CommandInvoker} commandInvoker */
+  #commandInvoker = null;
+
   constructor(TerminalElementContent, config = null) {
+    this.#commandInvoker = new CommandInvoker();
+
     this.config = config ?? terminalConfig;
 
     TerminalElementContent.querySelector(".prefix").innerText =
@@ -25,6 +32,8 @@ class Terminal {
   }
 
   executeCommand(command) {
+    this.#commandInvoker.invoke(command);
+
     this.input.value = "";
     this.addToHistory(command);
     this.input.scrollIntoView();
